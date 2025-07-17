@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #000000;
+  line-height: 1.4;
+  font-family: Poppins, sans-serif;
+  font-size: 16pt;
+  background: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+  align-items: top;
+  background-color: white;
+  height: 70px;
+}
+
+.navbarlogo {
+  position: relative;
+  align-content: top;
+  width: 200px;
+  /*max-width: 200px;*/
+  height: auto;
+  top: -10px;
+  /*top: -1.5vw;*/
+  bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://cdn.glitch.global/e696fa76-aaeb-49cc-b996-584f503ec22e/ShumLogo.svg?v=1699478765136);
+}
+
+.navbarlinks {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: right;
+  text-decoration: none;
+  margin: 10px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+a.navbarlinks {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breakspace {
+  margin-top: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.headerimage {
+  background-color: blue;
+  background-image: url(https://cdn.glitch.global/e696fa76-aaeb-49cc-b996-584f503ec22e/100Gecs.jpg?v=1699910413844);
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articletitle {
+  font-size: 10vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: black;
+  color: white;
+}
+
+.center {
+  justify-content: center;
+  left: auto;
+  right: auto;
+}
+
+.text {
+  margin: 5vw;
+  column-count: 3;
+  font-size: 16px
+}
+
+.pull-quote {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  justify-content: center;
+  column-count: 1;
+}
+
+footer {
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  margin-top: 5px; 
+  margin-left: 5px;
+  color: white;
+  background: black;
+  justify-content: space-between;
+}
+
+.about{
+
+}
+
+.Contact {
+  text-align: right;
+  list-style-position: inside;
+}
+
+.ContactList {
+  list-style-type: none;
+
+}
+
+
+.Socials {
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 480px){
+  html{
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .text{
+    margin: 5vw;
+    width: 75vw;
+    min-width: 200px;
+    justify-content: center;
+    column-count: 1;
+  }
+  
+  .navbarlinks{
+    height: 1px;
+    margin: -1px;
+    width: 1px;
+  }
+  
+  .navbarlogo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer {
+    flex-direction: column;
+    columns: 1;
+  }
+  
+  .Contact{
+    margin-top: 5px;
+    order: 3;
+    list-style-type: none;
+    text-align: left;
+    list-style-position: inside;
+  }
+  
+  
+  .About {
+    order: 2;
+  }
+  
+  .Socials {
+    order: 1;
+  }
+}
